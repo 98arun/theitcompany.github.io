@@ -676,7 +676,7 @@ nav .icon-burger .line{
 .your-class div{
     color: #000;
 }
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 550px) {
   
     .right img {
             width: 250px;
