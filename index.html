@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" />
+    <link rel="shortcut icon" href="images/The IT Company.svg">
 
-    <title>Docunment!</title>
+    <title>The IT Company</title>
 </head>
 
 <body>
@@ -26,11 +27,11 @@
             <img src="images/The IT Company.svg" alt="logo">
         </div>
         <div class="links">
-            <ul class="nav-list">
+            <ul class="nav-list v-class">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Work</a></li>
                 <li class="nav-item dropdown drop">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle disc" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         Services
                     </a>
@@ -71,10 +72,15 @@
             </ul>
 
         </div>
-        <label for="nav-toggle" class="icon-burger">
+        <label for="nav-toggle" class="icon-burger ">
+            <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </label>
+        <!-- <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div> -->
     </nav>
     <section class="background">
         <h1 class="head">We are Modern IT Company</h1>
@@ -104,43 +110,48 @@
                 <img src="images/Rectangle 52.png" alt="">
                 <h4>Name</h4>
                 <h3>Ceo, Founder</h3>
-                <p>Linkdin</p>
+                <p>Linkedln</p>
             </div>
             <div class="col-4-md">
                 <img src="images/Rectangle 52-1.png" alt="">
                 <h4>Name</h4>
                 <h3>Ceo, Founder</h3>
-                <p>Linkdin</p>
+                <p>Linkedln</p>
             </div>
             <div class="col-4-md">
                 <img src="images/Rectangle 52-2.png" alt="">
                 <h4>Name</h4>
                 <h3>Ceo, Founder</h3>
-                <p>Linkdin</p>
+                <p>Linkedln</p>
             </div>
         </div>
 
     </div>
-    <div class="people">
+    <!-- <div class="people">
         <h1 class="head4">Our People</h1>
         <h6 class="inner">Our People</h6>
     </div>
-    <!-- <div class="slider">
-        <div class="your-class">
-            <div>your content</div>
-            <div>your content</div>
-            <div>your content</div>
-          </div>
 
-    </div> -->
 
-    <!-- <div class="slider">
+    <div class="slider">
         <div class="raww">
-            <div class="col-12-md">
+            <div class="col">
                 <img src="images/Rectangle 53.png" alt="">
             </div>
-            <div class="col-12-md">
+            <div class="col">
                 <img src="images/Rectangle 54.png" alt="">
+            </div>
+            <div class="col">
+                <img src="images/Rectangle 59-1.png" alt="">
+            </div>
+            <div class="col">
+                <img src="images/Rectangle 53.png" alt="">
+            </div>
+            <div class="col">
+                <img src="images/Rectangle 54.png" alt="">
+            </div>
+            <div class="col">
+                <img src="images/Rectangle 59-1.png" alt="">
             </div>
         </div>
 
@@ -163,7 +174,7 @@
     <footer class="foot">
         <div class="row">
             <div class="col-6 leftside">
-                <span class="it">The IT Cmopany</span>
+                <span class="it">The IT Company</span>
                 <span class="follow">Follow us at</span>
                 <div class="picture">
                     <img src="images/Icon awesome-facebook-square.svg" alt="">
@@ -213,13 +224,15 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- <script type="text/javascript">
-        $('.slider').slick({
+        $('.raww').slick({
             dots: false,
             infinite: false,
             speed: 300,
             slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             arrow: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -246,17 +259,17 @@
                 }
 
             ]
-        });</script> -->
-        <!-- <script type="text/javascript">
-            $(document).ready(function(){
-              $('.your-class').slick({
-                slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-                // setting-name: setting-value
-              });
-            });
-          </script> -->
+        });
+
+     </script> -->
+ <script type="text/javascript">
+     burger = document.querySelector('.icon-burger');
+     navList = document.querySelector('.nav-list');
+
+    burger.addEventListener('click', function (){
+        navList.classList.toggle('v-class');
+    });
+</script>
 </body>
 
 </html>
