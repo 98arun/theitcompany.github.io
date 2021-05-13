@@ -16,6 +16,8 @@
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" />
     <link rel="shortcut icon" href="images/The IT Company.svg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <title>The IT Company</title>
 </head>
@@ -77,10 +79,7 @@
             <div class="line"></div>
             <div class="line"></div>
         </label>
-        <!-- <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-        </div> -->
+
     </nav>
     <section class="background">
         <h1 class="head">We are Modern IT Company</h1>
@@ -90,7 +89,7 @@
         <p class="scroll">Scroll Down</p>
         <img src="images/Group 1114.svg" alt="">
     </section>
-    <section class="impact">
+    <section class="impact" data-aos="flip-up">
         <div class="left">
             <h1 class="head2">Engineering Impact</h1>
             <p class="para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -106,19 +105,19 @@
     <div class="leader">
         <h1 class="head3">Leadership Team.</h1>
         <div class="team">
-            <div class="col-4-md">
+            <div class="col-4-md" data-aos="slide-up">
                 <img src="images/Rectangle 52.png" alt="">
                 <h4>Name</h4>
                 <h3>Ceo, Founder</h3>
                 <p>Linkedln</p>
             </div>
-            <div class="col-4-md">
+            <div class="col-4-md" data-aos="slide-up">
                 <img src="images/Rectangle 52-1.png" alt="">
                 <h4>Name</h4>
                 <h3>Ceo, Founder</h3>
                 <p>Linkedln</p>
             </div>
-            <div class="col-4-md">
+            <div class="col-4-md" data-aos="slide-up">
                 <img src="images/Rectangle 52-2.png" alt="">
                 <h4>Name</h4>
                 <h3>Ceo, Founder</h3>
@@ -127,37 +126,27 @@
         </div>
 
     </div>
-    <!-- <div class="people">
-        <h1 class="head4">Our People</h1>
-        <h6 class="inner">Our People</h6>
-    </div>
-
-
-    <div class="slider">
-        <div class="raww">
-            <div class="col">
-                <img src="images/Rectangle 53.png" alt="">
-            </div>
-            <div class="col">
-                <img src="images/Rectangle 54.png" alt="">
-            </div>
-            <div class="col">
-                <img src="images/Rectangle 59-1.png" alt="">
-            </div>
-            <div class="col">
-                <img src="images/Rectangle 53.png" alt="">
-            </div>
-            <div class="col">
-                <img src="images/Rectangle 54.png" alt="">
-            </div>
-            <div class="col">
-                <img src="images/Rectangle 59-1.png" alt="">
-            </div>
+    <div class="high">
+        <div class="people">
+            <h1 class="head4">Our People</h1>
+            <h6 class="inner">Our People</h6>
         </div>
 
-    </div> -->
+
+        <div class="slider">
+            <div class="raww" data-aos="fade-right">
+                <div class="col">
+                    <img src="images/Rectangle 53.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="images/Rectangle 54.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
     <section class="touch">
-        <div class="leftbar">
+        <div class="leftbar" data-aos="fade-right">
             <h1 class="head5">Feel Free to get in touch with us</h1>
             <p class="para3">If you have an idea let's discuss it. Just drop us an email or call and we'll find a
                 suitable time for a meeting.</p>
@@ -167,7 +156,7 @@
             </div>
 
         </div>
-        <div class="rightbar">
+        <div class="rightbar" data-aos="fade-left">
             <img src="images/Group 69.svg" alt="">
         </div>
     </section>
@@ -223,53 +212,37 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+
     <!-- <script type="text/javascript">
-        $('.raww').slick({
-            dots: false,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            arrow: false,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
 
-            ]
+      $('.raww').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        infinite: true,
+        arrow: false,
+        // asNavFor: '.slider-for',
+        // centerMode: true,
+        // focusOnSelect: true
+      });
+      </script> -->
+    <script type="text/javascript">
+        burger = document.querySelector('.icon-burger');
+        navList = document.querySelector('.nav-list');
+
+        burger.addEventListener('click', function () {
+            navList.classList.toggle('v-class');
         });
-
-     </script> -->
- <script type="text/javascript">
-     burger = document.querySelector('.icon-burger');
-     navList = document.querySelector('.nav-list');
-
-    burger.addEventListener('click', function (){
-        navList.classList.toggle('v-class');
-    });
-</script>
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
 </body>
 
 </html>

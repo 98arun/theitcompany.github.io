@@ -80,7 +80,7 @@
 .dropdown-menu.drop-me.show{
     margin: 0 -750px !important;
     opacity: 1;
-    pointer-events: all;
+    /* pointer-events: all; */
 }
 .drop-me{
     width: 1184px;
@@ -91,8 +91,26 @@
     text-decoration: none;
 }
 .drop-you img{
-    padding-right: 10px;
+    padding-right: 10px;}
+
+/* .col li a img{
+     background-size: 100%;
+    background-position: center;
+    transition: 1s;}
+.col li a img:hover .col li a img::after{
+    background-size: 150%;
+    background-position: center;
+    transform: scale(1.1) !important;
+    cursor: pointer !important;
 }
+.dropdown-item .drop-you {
+    transition: 1s !important;
+}
+.dropdown-item .drop-you :hover {
+    transform: scale(1.1) !important;
+    cursor: pointer !important;
+} */
+
 .css{
     display: flex;
     padding: 20px 50px;
@@ -215,7 +233,7 @@
     text-align: left;
     height: 29px;
 }
-/* .people{
+.people{
     padding: 150px 110px;  
     width: 100%;
 }
@@ -241,15 +259,23 @@
 }
 .slider{
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 .raww{
     display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 150px;
+    cursor: pointer;
 } 
 .slider img{
-    width: 600px;
+    width: 1111px;
     height: 765px;
+    padding-right: 50px;
+
 }
- */
+
 
 
 
@@ -350,8 +376,8 @@
     font-size: 33px;
     font-weight: bold;
     display: block;
-
 }
+
 .follow{
     font-size: 26px;
     font-weight: bolder;
@@ -470,6 +496,9 @@ nav .icon-burger .line{
     .rightbar img {
             width: 350px;
             height: 280px;
+                        }
+    .high{
+            display: none;
                         }
                         
 }
